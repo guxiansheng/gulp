@@ -1,0 +1,62 @@
+/* 
+ * 合作结构  
+ * @version: 0.0.1 
+ * @date: 2017-11-07 13:36:44 
+ * @author: zzf@zhaozhifeng@yidai.com 
+ * @description: 合作机构样式 
+ * @depend: 依赖描述 
+ */
+ 
+@import "../core/theme.less";
+
+.about-container {
+    padding-bottom: 50px;
+}
+.a-item {
+    .img {
+        padding: 45px 0;
+        display: table-cell;
+        vertical-align: middle;
+        width: 205px;
+        border-bottom: 1px solid #EDEDED;
+    }
+    .text {
+        padding: 45px 0;
+        display: table-cell;
+        vertical-align: middle;
+        border-bottom: 1px solid #EDEDED;
+        h5 {
+            font-size: 18px;
+            color: #BCAA83;
+            letter-spacing: 0;
+            font-weight: normal;
+            line-height: 25px;
+            margin-bottom: 11px;
+        }
+        p {
+            font-size: 14px;
+            color: #666666;
+            letter-spacing: 0;
+            line-height: 27px;
+            margin-bottom: 5px;
+        }
+        a {
+            font-size: 14px;
+            color: #BCAB83;
+            letter-spacing: 0;
+            float: right;
+            line-height: 20px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .icon-more {
+        background: url('../../images/icon_sprite/sprite_46.png') no-repeat no-repeat center center;
+        width: 6px;
+        height: 16px;
+        margin-left: 3px;
+        position: relative;
+        top: -1px;
+    }
+}

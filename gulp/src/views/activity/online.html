@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>上线活动</title>
+    <!--{include file="../common/head.html"}-->
+    <link href="../../static/styles/activity/online.less" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- header -->
+    <!--{include file="../common/header.html"}-->
+    <div class="online">
+        <div class="head"></div>
+        <div class="item zhuce">
+            <div class="title">注册豪礼免费领</div>
+            <img src="../../static/images/activity/online/online_1.png" />
+            <div class="text">
+                <a href="#" class="mingxi">
+                    <span class="y-icon icon-hongbao"></span>查看红包明细</a>
+                <div class="btns">
+                    <a href="/user/register/" class="btn">立即领取</a>
+                </div>
+                <p>领取成功后，在个人中心-我的红包中可查看红包，根据单个红包规则在有效期内成功投资即可激活红包。</p>
+            </div>
+        </div>
+        <div class="item yaoqing">
+            <div class="title title2">邀请好友赚1000元现金红包</div>
+            <img src="../../static/images/activity/online/online_5.png" />
+            <div class="btns">
+                <a href="/friend/" class="btn">立即领取</a>
+            </div>
+            <div class="note">
+                <p>备注：</p>
+                <p>1、每邀请1位好友注册，即可获得1个50元的红包，好友注册30天内单笔投资（不含承接转让项目)金额≥5000元且持有该项目30天，红包可提取。奖励上不封顶。</p>
+                <p>2、2017年11月20日-2017年12月20日期间邀请的好友，为你解锁了10个及以上可提取的邀请红包时，可额外获得500元现金红包的奖励（立即可提取）。</p>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="text">
+                <h5>活动说明</h5>
+                <p>1、投标红包、邀请红包均实时发放至平台账户中，可在“个人中心-我的红包”中查看，每个红包激活规则请详见红包说明内容；</p>
+                <p>2、注册可领5元现金红包，实名认证即可提取；</p>
+                <p>3、宜湃网保留取消恶意刷奖所获得的一切奖励的权利，本活动最终解释权归宜湃网所有。</p>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="bg"></div>
+        <div class="popup-container">
+            <div class="hd">
+                <span class="y-icon icon-colse"></span>
+            </div>
+            <div class="bd">
+                <div class="title">1888元投标红包明细</div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>红包金额</th>
+                                <th>单笔投资</th>
+                                <th>红包激活条件</th>
+                                <th>持有天数</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>5</td>
+                                <td>3000</td>
+                                <td>5元现金红包，实名认证即可提取</td>
+                                <td>10天</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>3000</td>
+                                <td>5元现金红包，实名认证即可提取</td>
+                                <td>10天</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>3000</td>
+                                <td>注册30天内单笔成功投资银优计划金额≥5000元</td>
+                                <td>10天</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>3000</td>
+                                <td>5元现金红包，实名认证即可提取</td>
+                                <td>10天</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>3000</td>
+                                <td>5元现金红包，实名认证即可提取</td>
+                                <td>10天</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>3000</td>
+                                <td>5元现金红包，实名认证即可提取</td>
+                                <td>10天</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <!--{include file="../common/footer.html"}-->
+    <!-- tools abr -->
+    <!--{include file="../common/tools_bar.html"}-->
+</body>
+<script src="../../static/scripts/lib/require.js"></script>
+<script src="../../static/scripts/config.js"></script>
+<script>
+    require(['jquery'], function(){
+        $(function(){
+            $('.mingxi').on('click', function(){
+                $('.popup').show();
+                return false;
+            });
+            $('.popup .icon-colse').on('click', function(){
+                $('.popup').hide();
+                return false;
+            });
+        })
+    });
+</script>
+</html>

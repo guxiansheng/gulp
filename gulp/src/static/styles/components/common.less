@@ -1,0 +1,101 @@
+/* 
+ * 公共样式模块 
+ * @version: 0.0.1 
+ * @date: 2017-09-27 11:41:13 
+ * @author: zzf@zhaozhifeng@yidai.com 
+ * @description: 全站公共样式模块 
+ * @depend: @reset @theme
+ */
+
+@import "../core/theme.less";
+@import "../core/reset.less";
+
+@import "../components/header.less";
+@import "../components/footer.less";
+@import "../components/y_btn.less";
+@import "../components/tools_bar.less";
+@import "../components/y_page.less";
+@import "../components/about.less";
+
+/* 数字字体 */
+@font-face {
+    font-family: 'yidaiNum';
+    src: url('../font/yidai_num/yidai_num.eot'); /* IE9 Compat Modes */
+    src: url('../font/yidai_num/yidai_num.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/yidai_num/yidai_num.woff') format('woff'), /* Modern Browsers */
+         url('../font/yidai_num/yidai_num.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../font/yidai_num/yidai_num.svg#yidai_num') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+.font-num {
+    font-family: 'yidaiNum'
+}
+
+/* 窗口背景色 */
+html,
+body {
+    background-color: @bgf2;
+    min-width: 1200px;
+}
+
+/* 清除浮动 */
+.site-main {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* icon */
+.y-icon {
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    *display: inline;
+}
+/* 最后没有边线 */
+.no-br {
+    &.top {
+        border-top: none !important;
+    }
+    &.left {
+        border-left: none !important;
+    }
+    &.right {
+        border-right: none !important;
+    }
+    &.bottom {
+        border-bottom: none !important;
+    }
+    &.all {
+        border: none !important;
+    }
+}
+/* 最后没有边线 */
+.no-mg {
+    &.top {
+        margin-top: 0px !important;
+    }
+    &.left {
+        margin-left: 0px !important;
+    }
+    &.right {
+        margin-right: 0px !important;
+    }
+    &.bottom {
+        margin-bottom: 0px !important;
+    }
+}
